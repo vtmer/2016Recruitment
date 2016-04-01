@@ -1,0 +1,39 @@
+.title-move {
+	animation: title-move 1.5s linear;
+	animation-fill-mode: both;
+}
+.fadeIn {
+	animation: fadeIn 1.5s linear;
+	animation-fill-mode: both;
+}
+.title2-move {
+	animation: title-move 1.5s linear;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes goDown {
+	from {
+		bottom: 0px;
+	}
+	to {
+		bottom: -20px;
+	}
+}
+@-webkit-keyframes title-move {
+	from{
+		bottom: -50px;
+		opacity: 0;
+	}
+	to{
+		bottom: 0px;
+		opacity: 1;
+		display: block;
+	}
+}
+@-webkit-keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
