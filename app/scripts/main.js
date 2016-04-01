@@ -33,18 +33,33 @@ myApp.controller('MainControl', ['$scope', '$location', function(scope, loca) {
 			var footer = $('#second-article footer');
 			var animateQue = [
 				function() {
-					footer.find('img').eq(0).fadeIn(2000, function() {
+					footer.find('img').eq(0).animate({opacity:1},1000, function() {
 						next();
 					});
 
 				},
 				function() {
-					footer.find('img').eq(1).fadeIn(2000, function() {
+					footer.find('img').eq(1).animate({opacity:1},1000, function() {
 						next();
 					});
 				},
 				function() {
-					footer.find('img').eq(2).fadeIn(2000, function() {
+					footer.find('span').eq(0).animate({opacity:1},1000, function() {
+						next();
+					});
+				},
+				function() {
+					footer.find('span').eq(1).animate({opacity:1},1000, function() {
+						next();
+					});
+				},
+				function() {
+					footer.find('span').eq(2).animate({opacity:1},1000, function() {
+						next();
+					});
+				},
+				function() {
+					footer.find('img').eq(2).animate({opacity:1},1000, function() {
 						next();
 					});
 				}
@@ -59,21 +74,21 @@ myApp.controller('MainControl', ['$scope', '$location', function(scope, loca) {
 
 		} else if (loca.url() === '/third-page') {
 			console.log('asd');
-			$('#third-aritcle header').fadeIn(3000, function() {
-				$('#third-aritcle p').fadeIn(3000, function() {
-					$('#third-aritcle details').fadeIn(3000)
+			$('#third-aritcle header').animate({opacity:1,bottom:0+'px'},3000,function() {
+				$('#third-aritcle p').animate({opacity:1},2000, function() {
+					$('#third-aritcle details').animate({opacity:1},2000)
 				})
 			})
 		} else if (loca.url() === '/forth-page') {
-			$('#forth-aritcle header').fadeIn(3000, function() {
-				$('#forth-aritcle p').fadeIn(3000, function() {
-					$('#forth-aritcle details').fadeIn(3000)
+			$('#forth-aritcle header').animate({opacity:1,bottom:0+'px'},2000, function() {
+				$('#forth-aritcle p').animate({opacity:1},2000, function() {
+					$('#forth-aritcle details').animate({opacity:1},2000)
 				})
 			})
 		} else if (loca.url() === '/fifth-page') {
-			$('#fifth-aritcle header').fadeIn(3000, function() {
-				$('#fifth-aritcle p').fadeIn(3000, function() {
-					$('#fifth-aritcle details').fadeIn(3000)
+			$('#fifth-aritcle header').animate({opacity:1,bottom:0+'px'},2000, function() {
+				$('#fifth-aritcle p').animate({opacity:1},2000, function() {
+					$('#fifth-aritcle details').animate({opacity:1},2000)
 				})
 			})
 		}

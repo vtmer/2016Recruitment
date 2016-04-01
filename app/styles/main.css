@@ -210,8 +210,12 @@ body {
 				align-items: flex-end;
 				justify-content: space-between;
 			}
-			#second-article footer *:not(div) {
+			/*#second-article footer *:not(div) {
 				display: none;
+			}*/
+			#second-article footer img,
+			#second-article footer span {
+				opacity: 0;
 			}
 			#second-article footer img:nth-child(1) {
 				width: 150px;
@@ -260,7 +264,9 @@ body {
 				line-height: 30px;
 			}
 			.content-right article header {
-				display: none;
+				opacity: 0;
+				position: relative;
+				bottom: -30px;
 			}
 			.content-right article h1 {
 				font-family: "Microsoft YaHei";
@@ -269,7 +275,7 @@ body {
 				position: relative;
 			}
 			.content-right article p {
-				display: none;
+				opacity: 0;
 			}
 			.content-right details {
 				margin-top: 10px;
@@ -277,7 +283,7 @@ body {
 				font-family: "SimSun";
 				color: rgb(98, 94, 94);
 				line-height: 30px;
-				display: none;
+				opacity: 0;
 			}
 			
 			.content-right details>p {
