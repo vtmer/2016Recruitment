@@ -205,9 +205,6 @@ body {
 			#second-article span {
 				color: #6ec2fc;
 			}
-			#second-article main {
-				opacity: 0;
-			}
 			#second-article footer {
 				display: flex;
 				align-items: flex-end;
