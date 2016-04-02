@@ -6,10 +6,6 @@
 	animation: fadeIn 1.5s linear;
 	animation-fill-mode: both;
 }
-.title2-move {
-	animation: title-move 1.5s linear;
-	animation-fill-mode: both;
-}
 @-webkit-keyframes goDown {
 	from {
 		bottom: 0px;

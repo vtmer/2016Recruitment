@@ -181,12 +181,13 @@ body {
 			.header {
 				position: relative;
 				border: transparent;
-				margin-bottom: 20px;
+				margin-bottom: 10px;
 			}
 			
 			.header>h1 {
 				color: #6ec2fc;
 				font-family: "Microsoft YaHei";
+				font-size: 48px;
 			}
 			
 			.article {
@@ -335,7 +336,7 @@ body {
 			
 			.block p {
 				height: 50%;
-				word-wrap: auto;
+				overflow-wrap: break-word;
 				overflow-y: auto;
 			}
 			
@@ -344,7 +345,6 @@ body {
 				left: -30px;
 				font-size: 18px;
 				font-family: "Microsoft YaHei";
-				color: rgb(88, 120, 235);
 			}
 			
 			.block header img {
@@ -355,7 +355,10 @@ body {
 			.block p {
 				text-align: left;
 			}
-			
+			.block p {
+				margin-left:40px;
+				line-height: 20px;
+			}
 			.block p::-webkit-scrollbar {
 				width: 5px;
 				background-color: #F5F5F5;
@@ -364,36 +367,54 @@ body {
 			.block p::-webkit-scrollbar-thumb {
 				border-radius: 6px;
 			}
-			
+			#block-left header {
+				color: #58d59e;
+			}
 			#block-left p::-webkit-scrollbar-thumb {
 				background-color: #58d59e;
 			}
-			
-			#block-left {
-				background-color: #daf8f3;
+			#block-middle p {
+				margin-right: 30px;
 			}
-			
+			#block-middle header {
+				color: rgb(88, 120, 235);
+			}
 			#block-middle p::-webkit-scrollbar-thumb {
 				background-color: #5878eb;
 			}
-			
-			#block-middle {
-				background-color: #c8e6fb;
+			#block-right {
+				margin-left: 60px;
 			}
-			
+	
+			#block-right header {
+				color: #f6b268;
+			}
 			#block-right p::-webkit-scrollbar-thumb {
 				background-color: #f6b268;
 			}
 			
-			#block-right {
-				background-color: #fde2c5;
-			}
+
 			
 			.join {
 				margin-top: 5%;
+				
 			}
-			.join button:hover {
-				background-color: #aad9f9;
+			.join a {
+				border: 1px solid #6ec2fc;
+				color: #6ec2fc;
+				border-radius: 0px;
+				font-family: "微软雅黑";
+				font-size: 12px;
+			}
+			
+			.join a:hover {
+				animation:fadeIn 0.5s linear ;
+				background-color: #6ec2fc;
+				color: white;
+				border: 1px solid #6ec2fc;
+			}
+			.join a:visited {
+				font-size: 30px;
 			}
 			#sixth-article footer {
 				position: absolute;
