@@ -334,7 +334,7 @@ body {
 			}
 			
 			.block p {
-				height: 70%;
+				height: 50%;
 				word-wrap: auto;
 				overflow-y: auto;
 			}
