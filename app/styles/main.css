@@ -338,6 +338,7 @@ body {
 				height: 50%;
 				overflow-wrap: break-word;
 				overflow-y: auto;
+				font-family: "微软雅黑";
 			}
 			
 			.block header {
@@ -358,6 +359,7 @@ body {
 			.block p {
 				margin-left:40px;
 				line-height: 20px;
+				height: 100%;
 			}
 			.block p::-webkit-scrollbar {
 				width: 5px;
@@ -373,8 +375,12 @@ body {
 			#block-left p::-webkit-scrollbar-thumb {
 				background-color: #58d59e;
 			}
+			#block-middle {
+				max-width: 350px;
+			}
 			#block-middle p {
 				margin-right: 30px;
+				max-width: 200px;
 			}
 			#block-middle header {
 				color: rgb(88, 120, 235);
@@ -396,7 +402,7 @@ body {
 
 			
 			.join {
-				margin-top: 5%;
+				margin-top: 60px;
 				
 			}
 			.join a {
