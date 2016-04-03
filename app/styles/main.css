@@ -168,14 +168,6 @@ body {
 				left: 8px;
 			}
 			
-			@-webkit-keyframes goDown {
-				from {
-					bottom: 0px;
-				}
-				to {
-					bottom: -20px;
-				}
-			}
 			/*第二页*/
 			
 			.header {
@@ -290,6 +282,12 @@ body {
 			.content-right details>p {
 				margin: 0px;
 			}
+			
+			@media all and (max-height: 700px) {
+			    #backendp {
+			        display: none;
+			    }
+			}
 			/*第四页*/
 			
 			#forth-aritcle div[class*='content-right'] {
@@ -308,10 +306,12 @@ body {
 			#fifth-aritcle div[class*='content-right'] {
 				margin-top: 0px;
 			}
+
 			/*第六页*/
 			
 			#sixth-article header h1 {
 				font-family: "Microsoft YaHei";
+				font-size: 48px;
 				color: rgb(110, 194, 252);
 			}
 			
@@ -360,6 +360,7 @@ body {
 				margin-left:40px;
 				line-height: 20px;
 				height: 100%;
+				font-size: 14px;
 			}
 			.block p::-webkit-scrollbar {
 				width: 5px;

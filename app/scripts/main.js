@@ -22,6 +22,7 @@ myApp.controller('MainControl', ['$scope', '$location', function(scope, loca) {
 		navigationPosition: 'right',
 		scrollingSpeed: 1000,
 		animateAnchor: true,
+		resize:true,
 		afterLoad: function(a, b) {
 			var index = b - 1;
 			$("#fp-nav ul li").eq(index).find("a").addClass("active");
@@ -73,7 +74,6 @@ myApp.controller('MainControl', ['$scope', '$location', function(scope, loca) {
 			next();
 
 		} else if (loca.url() === '/third-page') {
-			console.log('asd');
 			$('#third-aritcle header').animate({opacity:1,bottom:0+'px'},3000,function() {
 				$('#third-aritcle p').animate({opacity:1},2000, function() {
 					$('#third-aritcle details').animate({opacity:1},2000)
@@ -94,3 +94,23 @@ myApp.controller('MainControl', ['$scope', '$location', function(scope, loca) {
 		}
 	});
 }])
+	$(function consoleinfo() {
+					           
+					
+console.log("    ___           ___           ___           ___           ___      \n"+  
+		    "   /\\__\\         /\\  \\         /\\__\\         /\\  \\         /\\  \     \n" +   
+		    "  /:/  /         \\:\\  \\       /::|  |       /::\\  \\       /::\\  \\    \n"+  
+		    " /:/  /           \\:\\  \\     /:|:|  |      /:/\\:\\  \\     /:/\\:\\  \\   \n"+ 
+		    "/:/__/  ___       /::\\  \\   /:/|:|__|__   /::\\~\\:\\  \\   /::\\~\\:\\  \\  \n"+
+		    "|:|  | /\\__\\     /:/\\:\\__\\ /:/ |::::\\__\\ /:/\\:\\ \\:\\__\\ /:/\\:\\ \\:\\__\\ \n"+
+		    "|:|  |/:/  /    /:/  \\/__/ \\/__/~~/:/  / \\:\\~\\:\\ \\/__/ \\/_|::\\/:/  / \n"+
+		    "|:|__/:/  /    /:/  /            /:/  /   \\:\\ \\:\\__\\      |:|::/  /  \n"+
+		    " \\::::/__/     \\/__/            /:/  /     \\:\\ \\/__/      |:|\\/__/   \n"+
+		    "  ~~~~                         /:/  /       \\:\\__\\        |:|  |     \n"+   
+		    "                               \\/__/         \\/__/         \\|__|     \n"  
+					
+					);
+					console.log("一个人在看代码？不如和我们一起写代码吧！");
+					console.log("发邮件给我们：xs@vtmer.com")
+				}
+			)
