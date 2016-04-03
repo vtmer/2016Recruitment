@@ -4,3 +4,13 @@ dist
 .sass-cache
 bower_components
 test/bower_components
+/app
+/fonts
+/images
+/scripts
+/styles
+/test
+/apple-touch-icon.png
+/bower.json
+/dist.zip
+/favicon.ico
